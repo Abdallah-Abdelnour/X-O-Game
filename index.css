@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.game{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: system-ui;
+    color: white;
+    font-weight: 500;
+}
+.title{
+    background-color: #f25;
+    padding: 15px 0;
+    margin: 10px 0;
+    font-size: 30px;
+}
+span{
+    color: #fa0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,130px);
+    grid-template-rows: repeat(3,130px);
+    gap: 5px;
+}
+.container .square{
+    font-size: 80px;
+    background-color: #f25;
+}
+.container .square:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.container .square.notpointer{
+    pointer-events: none;
+}
